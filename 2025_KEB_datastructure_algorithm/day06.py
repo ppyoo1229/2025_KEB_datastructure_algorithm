@@ -1,10 +1,13 @@
-def is_even
-    if
-        return True
-    return False
+from sympy import factorial
 
 
-a = 10              #0000 1010
-b = 11              #0000 1011
-print(a & b)
-print(a | b)
+def = nCr(n,r) -> int:
+
+numerator = factorial(n)
+denominator = factorial(n-r) * factorial(r)
+return numerator / denominator
+
+if __name__=="__main__":
+    n = int(input("Input n : "))
+    r = int(input("Input r : "))
+    print(f"{n}C{n} = {nCr(n, r)}")
