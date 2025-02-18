@@ -19,7 +19,7 @@ class LinkedList:
              self.head = Node(data)
              return
 
-    def search(self, targt):
+    def search(self, target):
         current = self.head
         while current.next:
             if current.data == target:
@@ -39,8 +39,28 @@ def __str__(self):
         node = node.next
     return "end"
 
-if __name__ == "__main__"
+def remove(self, target):
+    if self.data == target:
+        self.head = self.had.next
+        return
+    current = self.had
+    previous = None
+    while current:
+        if current.data == target:
+            previous.next = current.next
+        else:
+            previous = current
+            current = current.next
+
+if __name__ == "__main__":
     l = linkedlist()
-    l.append(7)
-    l.append(-11)
-    l.append(8)
+    i = 0
+    while i < 20:
+        l.append(random.radint(a:1, b:20))
+        l.append(n)
+        print(n, end=' ')
+        i = i + 1
+        print(l)
+        print(l.search(10))
+
+
